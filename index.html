@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <h2>Ваша    норма калорий</h2>
+        <div class="nav-bar__res">
+            <p id="res1"></p>
+            <p>ккал    для поддержания веса</p>
+        </div>
+        <div class="nav-bar__res">
+            <p id="res2"></p>
+            <p>ккал    для безопасного похудения</p>
+        </div>
+        <div class="nav-bar__res">
+            <p id="res3"></p>
+            <p>ккал    для быстрого похудения</p>
+        </div>
+        <button onclick="closeM('q')">закрыть</button>
+    </div>
+    <div class="wrapper">
+        <h1>Счетчик калорий</h1>
+        <div class="wrapper__buttons">
+            <button onclick="weightadd('man')" class="wrapper__buttons_left" >Мен</button>
+            <button onclick="weightadd('wuman')" class="wrapper__buttons_right" >Вумен</button>
+        </div>
+        <div class="wrapper__inputs">
+            <div class="wrapper__inputs_input-one">
+                <h2>Возраст</h2>
+                <input id="one" type="text" placeholder="йу эйдж" >
+            </div>
+            <div class="wrapper__inputs_input-two">
+                <h2>Рост</h2>
+                <input id="two"  type="text" placeholder="йу sm" >
+            </div>
+            <div class="wrapper__inputs_input-three">
+                <h2>Вес</h2>
+                <input id="three"  type="text" placeholder="йу kg" >
+            </div>
+        </div>
+        <h2 class="page-2">Физическая активность</h2>
+        <ul class="wrapper__check-box-group">
+            <li class="wrapper__check-box-group_check-box-one">
+                <input id="check1" type="radio" name="check-box">
+                <label for="check1">Минимальная<br></label>
+                <p>Сидячая работа и нет физических нагрузок</p>
+            </li>
+            <li class="wrapper__check-box-group_check-box-one">
+                <input id="check2" type="radio" name="check-box">
+                <label for="check2">Низкая<br></label>
+                <p>Редкие, нерегулярные тренировки, активность в быту</p>
+            </li>
+            <li class="wrapper__check-box-group_check-box-one">
+                <input id="check3" type="radio" name="check-box">
+                <label for="check3">Средняя<br></label>
+                <p>Тренировки 3-5 раз в неделю</p>
+            </li>
+            <li class="wrapper__check-box-group_check-box-one">
+                <input id="check4" type="radio" name="check-box">
+                <label for="check4">Высокая<br></label>
+                <p>Тренировки 6-7 раз в неделю</p>
+            </li>
+            <li class="wrapper__check-box-group_check-box-one">
+                <input id="check5" type="radio" name="check-box">
+                <label for="check5">Очень высокая<br></label>
+                <p>Больше 6 тренировок в неделю и физическая работа</p>
+            </li>  
+        </ul>
+        <button onclick="submit()" class="wrapper__button-submit" type="submit">Расчитать</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

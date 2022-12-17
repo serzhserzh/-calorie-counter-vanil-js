@@ -1,0 +1,162 @@
+*{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url('wallpaperbetter.com_1920x1080.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar{
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: none;
+    background: rgb(255,188,1);
+    background: linear-gradient(0deg, rgba(255,188,0,1) 0%, rgba(226,179,50,1) 100%);
+
+}
+.nav-bar h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+}
+.nav-bar p{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.nav-bar__res{
+    display: flex;
+    width: 100%;
+}
+.nav-bar button{
+    
+    border-style: hidden;
+    margin: 30px;
+    padding: 15px 30px;
+    background-color: rgb(219, 88, 28);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+.nav-bar button:hover{
+    color: black;
+}
+button{
+    font-size: 1.7361vw;
+}
+.wrapper{
+    width: 40%;
+    border-radius: 1.388vw;
+    border: 2px;
+    background: rgba(255, 188, 0, 0.8);
+    background: linear-gradient(0deg, rgba(255,188,0,0.8) 0%, rgba(226,179,50,0.8) 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 30px;
+    padding: 1.388vw;
+    color: white;
+}
+h2{
+    font-size: 20px;
+    color: white;
+}
+.wrapper__buttons{
+    width: 90%;
+    display: flex;
+    border: 2px solid rgb(219, 88, 28);
+    
+}
+.wrapper__buttons button{
+    width: 50%;
+    height: 100%;
+    padding: 1.0416vw 3.472vw;
+    border: none;
+    overflow: hidden;
+    font-size: 25px;
+   cursor: pointer;
+}
+.wrapper__buttons_left{
+    background-color: rgb(219, 88, 28);
+    color: white;
+}
+.wrapper__buttons_right{
+    background-color: white;
+}
+.wrapper__inputs{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.wrapper__inputs input{
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 2.777vw;
+    border: none;
+    margin: 10px;
+}
+ul{
+    width: 90%;
+    margin-top: 10px;
+}
+li{
+    padding: 0.694vw;
+    font-size: 20px;
+}
+p{
+    color:white;
+    font-size: 15px;
+}
+.wrapper__button-submit{
+    margin: 30px;
+    padding: 15px 30px;
+    background-color: rgb(219, 88, 28) ;
+    border-style: solid;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+.wrapper__button-submit:hover{
+    color: black;
+}
+@media (max-width: 800px) {
+    .wrapper{
+        width: 80%;
+    }
+    .nav-bar{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper{
+        width: 100%;
+        height: 100%;
+    }
+    .nav-bar{
+        width: 100%;
+        height: 100%;
+    }
+}
